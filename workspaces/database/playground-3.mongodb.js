@@ -1,6 +1,4 @@
 
-
-
 use('biblioteca');
 
 db.libros.deleteOne({ "titulo": "1984" });

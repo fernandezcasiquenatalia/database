@@ -1,7 +1,8 @@
-use('biblioteca');  
+use('biblioteca');
 
 db.libros.insertMany([
   {
+    "_id": 1,
     "titulo": "1984",
     "autor": "George Orwell",
     "ISBN": "978-0-452-28423-4",
@@ -17,6 +18,7 @@ db.libros.insertMany([
 
 db.usuarios.insertMany([
   {
+    "_id": 1,
     "nombre": "Carlos López",
     "edad": 25,
     "email": "carlos.lopez@example.com",
@@ -34,21 +36,22 @@ db.usuarios.insertMany([
 
 db.prestamos.insertMany([
   {
-    "_id": ObjectId(),
-    "id_usuario": ObjectId("1"),  
-    "id_libro": ObjectId("25"),   
+    "_id": 1,
+    "id_usuario": 1,
+    "id_libro": 1,
     "fecha_prestamo": ISODate("2025-11-12"),
     "fecha_devolucion": ISODate("2025-11-19"),
     "estado": "activo",
     "fechaRegistro": ISODate("2025-11-12T14:00:00Z"),
     "titulo": "El mundo de Ben y Hooly",
-    "biblioteca": "Zaragosa",
+    "biblioteca": "Zaragoza",
     "dias_para_entregarlo": 7
   }
 ]);
 
 db.autores.insertMany([
   {
+    "_id": 1,
     "nombre": "George Orwell",
     "apellidos": "Blair",
     "fecha_nacimiento": ISODate("1903-06-25T00:00:00Z"),
@@ -64,6 +67,7 @@ db.autores.insertMany([
 
 db.categoria.insertMany([
   {
+    "_id": 1,
     "id_categoria": 1,
     "nombre": "Distopía",
     "descripcion": "Categoría que abarca novelas que presentan un futuro totalitario o un orden social opresivo.",
@@ -73,5 +77,3 @@ db.categoria.insertMany([
     "autor": "Ben Fild"
   }
 ]);
-
-db.usuarios.find().pretty();  

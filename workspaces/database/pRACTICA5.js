@@ -16,4 +16,3 @@ db.autores.find({ "biografia": { $regex: "crítica", $options: 'i' } }).pretty()
 db.categoria.find({ "nombre": "Distopia" }).pretty();
 db.categoria.find({ "descripcion": { $regex: "mágico", $options: 'i' } }).pretty();
 
-print("Búsquedas realizadas");

@@ -1,0 +1,10 @@
+[
+  {
+    "_id": {
+      "$oid": "692096068b816a403c08fa9c"
+    },
+    "id_categoria": 3,
+    "nombre": "Fantasía",
+    "descripcion": "Mundos mágicos y fantásticos"
+  }
+]

@@ -35,8 +35,8 @@ db.usuarios.insertMany([
 db.prestamos.insertMany([
   {
     "_id": ObjectId(),
-    "id_usuario": ObjectId("605c72ef1532073bfcf6c7f3"),  
-    "id_libro": ObjectId("605c72ef1532073bfcf6c7f3"),   
+    "id_usuario": ObjectId("1"),  
+    "id_libro": ObjectId("25"),   
     "fecha_prestamo": ISODate("2025-11-12"),
     "fecha_devolucion": ISODate("2025-11-19"),
     "estado": "activo",

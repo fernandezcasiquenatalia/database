@@ -17,4 +17,3 @@ db.autores.updateOne({ "nombre": "F. Scott Fitzgerald" }, { $set: { "biografia":
 db.categoria.updateOne({ "id_categoria": 3 }, { $set: { "descripcion": "Mundos mágicos y fantásticos" } });
 db.categoria.updateOne({ "id_categoria": 5 }, { $set: { "descripcion": "Narrativa de temas diversos" } });
 
-print("Documentos modificados");

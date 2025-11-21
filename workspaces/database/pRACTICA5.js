@@ -1,41 +1,19 @@
 
+use('biblioteca');
 
-db.libros.find({ "titulo": "1984" });
+db.libros.find({ "genero": "Distopia" }).pretty();
+db.libros.find({ "año_publicacion": { $gte: 1900 } }).pretty();
 
-db.libros.find({ "autor": "George Orwell" });
+db.usuarios.find({ "edad": { $gt: 30 } }).pretty()
+db.usuarios.find({ "nombre": "Carlos López" }).pretty();
 
-db.libros.find({ "precio": { $gt: 15 } });
+db.prestamos.find({ "fecha_devolucion": { $gte: ISODate("2025-11-18") } }).pretty();
+db.prestamos.find({ "id_usuario": 5 }).pretty();
 
-db.libros.find({ "año_publicacion": { $gt: 1950 } });
+db.autores.find({ "nacionalidad": "Británico" }).pretty();
+db.autores.find({ "biografia": { $regex: "crítica", $options: 'i' } }).pretty();
 
-db.libros.find({ "titulo": { $regex: "mundo", $options: "i" } });
+db.categoria.find({ "nombre": "Distopia" }).pretty();
+db.categoria.find({ "descripcion": { $regex: "mágico", $options: 'i' } }).pretty();
 
-db.libros.find({ "ISBN": "978-0-452-28423-4" });
-
-db.libros.find({ "disponibilidad": true });
-
-db.libros.find({ "editorial": "Secker & Warburg" });
-
-db.libros.find({ "precio": { $lte: 15 } });
-
-db.libros.find({ "año_publicacion": { $lt: 1980 } });
-
-db.usuarios.find({ "nombre": "Carlos López" });
-
-db.usuarios.find({ "saldo": { $gt: 1500 } });
-
-db.usuarios.find({ "activo": true });
-
-db.usuarios.find({ "intereses": "música" });
-
-db.usuarios.find({ "edad": { $gt: 30 } });
-
-db.usuarios.find({ "direccion.ciudad": "Ciudad de México" });
-
-db.usuarios.find({ "intereses": "fútbol" });
-
-db.usuarios.find({ "saldo": { $gte: 1000, $lte: 2000 } });
-
-db.usuarios.find({ "intereses": { $size: { $gt: 1 } } });
-
-db.usuarios.find({ "nombre": { $regex: "^Carlos", $options: "i" } });
+print("Búsquedas realizadas");

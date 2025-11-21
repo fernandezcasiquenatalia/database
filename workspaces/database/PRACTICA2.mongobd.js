@@ -6,7 +6,7 @@ db.libros.insertMany([
     "autor": "George Orwell",
     "ISBN": "978-0-452-28423-4",
     "genero": "Distopía",
-    "ano_publicacion": 1949,
+    "año_publicacion": 1949,
     "disponibilidad": true,
     "fechaRegistro": ISODate("2025-11-12T14:00:00Z"),
     "sinopsis": "Una novela distópica que muestra un futuro totalitario controlado por el Gran Hermano.",
@@ -35,8 +35,8 @@ db.usuarios.insertMany([
 db.prestamos.insertMany([
   {
     "_id": ObjectId(),
-    "id_usuario": ObjectId("605c72ef1532073bfcf6c7f3"),  // Reemplazar con ObjectId real de un usuario
-    "id_libro": ObjectId("605c72ef1532073bfcf6c7f3"),    // Reemplazar con ObjectId real de un libro
+    "id_usuario": ObjectId("605c72ef1532073bfcf6c7f3"),  
+    "id_libro": ObjectId("605c72ef1532073bfcf6c7f3"),   
     "fecha_prestamo": ISODate("2025-11-12"),
     "fecha_devolucion": ISODate("2025-11-19"),
     "estado": "activo",
@@ -59,6 +59,18 @@ db.autores.insertMany([
     "edad": 78,
     "libros_publicados": 4,
     "sexo": "masculino"
+  }
+]);
+
+db.categoria.insertMany([
+  {
+    "id_categoria": 1,
+    "nombre": "Distopía",
+    "descripcion": "Categoría que abarca novelas que presentan un futuro totalitario o un orden social opresivo.",
+    "fechaRegistro": ISODate("2025-11-12T14:00:00Z"),
+    "biblioteca": "Colonial",
+    "titulo": "ZEN",
+    "autor": "Ben Fild"
   }
 ]);
 

@@ -1,0 +1,71 @@
+[
+  {
+    "_id": {
+      "$oid": "691e11cf8ec0fb72b9c76cf1"
+    },
+    "nombre": "Ana García",
+    "edad": 30,
+    "email": "ana.garcia@example.com",
+    "activo": true,
+    "saldo": 2200.4,
+    "fechaRegistro": {
+      "$date": "2025-11-12T14:00:00Z"
+    },
+    "intereses": [
+      "lectura",
+      "viajar",
+      "tecnología"
+    ],
+    "direccion": {
+      "calle": "Calle Ficticia 30",
+      "ciudad": "Madrid",
+      "cp": "28001"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "692074f1f542f96efcef07a8"
+    },
+    "nombre": "Carlos López",
+    "edad": 25,
+    "email": "carlos.lopez@example.com",
+    "activo": true,
+    "saldo": 1530.75,
+    "fechaRegistro": {
+      "$date": "2025-11-12T14:00:00Z"
+    },
+    "intereses": [
+      "música",
+      "fútbol",
+      "programación"
+    ],
+    "direccion": {
+      "calle": "Av. Universidad 120",
+      "ciudad": "Ciudad de México",
+      "cp": "04360"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "692074fee2c76862595bf669"
+    },
+    "nombre": "Carlos López",
+    "edad": 25,
+    "email": "carlos.lopez@example.com",
+    "activo": true,
+    "saldo": 1530.75,
+    "fechaRegistro": {
+      "$date": "2025-11-12T14:00:00Z"
+    },
+    "intereses": [
+      "música",
+      "fútbol",
+      "programación"
+    ],
+    "direccion": {
+      "calle": "Av. Universidad 120",
+      "ciudad": "Ciudad de México",
+      "cp": "04360"
+    }
+  }
+]
